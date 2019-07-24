@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- AT_MOST not implemented-->
+    <!--<com.otus.constraintdemo.CustomView
+        android:id="@+id/customView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />-->
+
+    <!-- EXACTLY  -->
+    <!--<com.otus.constraintdemo.CustomView2
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />-->
+
+    <com.otus.constraintdemo.CustomViewChild
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#f00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="X"/>
+
+        </LinearLayout>
+
+    </com.otus.constraintdemo.CustomViewChild>
+
+    <!-- unspecifed -->
+    <!--<HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.otus.constraintdemo.CustomView2
+            android:id="@+id/customView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+    </HorizontalScrollView>-->
+
+    <TextView
+        android:id="@+id/helloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Hello world" />
+
+</LinearLayout>
